@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f7fb;
+  color: #18212f;
+}
+
+button, input {
+  font: inherit;
+}
+
+header {
+  background: #18212f;
+  color: white;
+  padding: 42px 7%;
+}
+
+header h1 {
+  margin: 5px 0;
+  font-size: 34px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: .7;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  opacity: .75;
+}
+
+main {
+  width: min(1150px, 92%);
+  margin: 30px auto 60px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 26px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 25px rgba(20, 35, 55, .07);
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input {
+  border: 1px solid #d5dce5;
+  border-radius: 8px;
+  padding: 11px 12px;
+  outline: none;
+  background: white;
+}
+
+input:focus {
+  border-color: #4d7cff;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary {
+  background: #2457e6;
+  color: white;
+}
+
+.secondary {
+  background: #edf1f7;
+  color: #263448;
+}
+
+.search {
+  display: flex;
+  gap: 8px;
+}
+
+.search input {
+  width: 290px;
+}
+
+.alert {
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+}
+
+.success {
+  background: #e8f7ed;
+  color: #176b35;
+}
+
+.error {
+  background: #fdeaea;
+  color: #9b2226;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 13px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e8ecf1;
+  white-space: nowrap;
+}
+
+th {
+  font-size: 13px;
+  color: #667085;
+}
+
+.actions {
+  display: flex;
+  gap: 7px;
+}
+
+.edit {
+  background: #eaf0ff;
+  color: #2457e6;
+}
+
+.delete {
+  background: #ffecec;
+  color: #c62828;
+}
+
+.empty {
+  color: #667085;
+  text-align: center;
+  padding: 35px;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 30px 5%;
+  }
+
+  header h1 {
+    font-size: 27px;
+  }
+
+  main {
+    width: 94%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .search input {
+    width: 100%;
+  }
+}
